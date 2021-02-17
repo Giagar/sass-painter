@@ -91,3 +91,148 @@ header nav.bottom ul li i {
   color: #C4C4C4;
 }
 
+main .section-container {
+  background-image: url(/images/hero-pe-8.jpg?8b29a957bc4c220aea5804fdfdd1c467);
+  background-size: cover;
+  background-position: 55% 10%;
+}
+
+main .jumbo-painter .top-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .jumbo-painter .top-section-container .painter-description {
+  width: 600px;
+  height: 500px;
+  padding: 100px 50px;
+}
+
+main .jumbo-painter .top-section-container .painter-description h2 {
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+
+main .jumbo-painter .top-section-container .painter-description h2 span {
+  text-transform: uppercase;
+  font-style: italic;
+  color: #B936B2;
+}
+
+main .jumbo-painter .top-section-container .painter-description .description {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+main .jumbo-painter .top-section-container .painter-description ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+main .jumbo-painter .top-section-container .painter-description ul li i {
+  color: #C4C4C4;
+}
+
+main .jumbo-painter .top-section-container .painter-description .download-button {
+  margin-top: 20px;
+  border: 2px solid #000;
+  height: 70px;
+  width: 300px;
+  display: inline-block;
+  padding: 10px 25px;
+  display: flex;
+}
+
+main .jumbo-painter .top-section-container .painter-description .download-button div.text {
+  width: 70%;
+}
+
+main .jumbo-painter .top-section-container .painter-description .download-button div.text span {
+  height: 23px;
+  line-height: 23px;
+}
+
+main .jumbo-painter .top-section-container .painter-description .download-button div.text span:first-child {
+  text-transform: uppercase;
+}
+
+main .jumbo-painter .top-section-container .painter-description .download-button div.text span:last-child {
+  text-transform: capitalize;
+}
+
+main .jumbo-painter .top-section-container .painter-description .download-button div.img-container {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+main .jumbo-painter .top-section-container .buy {
+  width: 400px;
+  height: 450px;
+  background-color: #191919;
+  margin-top: 50px;
+  padding: 50px 20px;
+  position: relative;
+}
+
+main .jumbo-painter .top-section-container .buy .price {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+main .jumbo-painter .top-section-container .buy .description {
+  color: #C4C4C4;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+main .jumbo-painter .top-section-container .buy button {
+  border: none;
+  background-color: #28ACFF;
+  width: 140px;
+  height: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+
+main .jumbo-painter .top-section-container .buy img.warranty {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  width: 90px;
+}
+
+main .jumbo-painter .bottom-section-container .nav-container {
+  background-color: #E6E6E6;
+}
+
+main .jumbo-painter .bottom-section-container .nav-container .middle-nav {
+  width: 800px;
+  margin: 0 auto;
+  height: 70px;
+  background-color: #E6E6E6;
+}
+
+main .jumbo-painter .bottom-section-container .nav-container .middle-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  outline: 1px dotted lightblue;
+  justify-content: center;
+}
+
+main .jumbo-painter .bottom-section-container .nav-container .middle-nav ul li {
+  height: 70px;
+  font-size: 16px;
+  line-height: 70px;
+  padding: 0 25px;
+}
+

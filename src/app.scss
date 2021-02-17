@@ -95,3 +95,146 @@ header nav.bottom {
     }
 }
 // _/header nav.bottom
+
+// _main jumbo.painter
+main .section-container {
+    background-image: url("../img/hero-pe-8.jpg");
+    background-size: cover;
+    background-position: 55% 10%;
+
+}
+
+main .jumbo-painter .top-section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+
+    .painter-description {
+        width: 600px;
+        height: 500px;
+        padding: 100px 50px;
+
+        h2 {
+            font-size: 32px;
+            padding-bottom: 10px;
+            span {
+                text-transform: uppercase;
+                font-style: italic;
+                color: #B936B2;
+            }
+        }
+
+        .description {
+            font-size: 22px;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            li {
+                list-style: none;
+                padding: 5px 0;
+                i {
+                    color: $header-secondary-color;
+                }
+            }
+        }
+
+        .download-button {
+            margin-top: 20px;
+            border: 2px solid #000;
+            height: 70px;
+            width: 300px;
+            display: inline-block;
+            padding: 10px 25px;
+            display: flex;
+            div.text {
+                width: 70%;
+                span {
+                    // text-transform: uppercase;
+                    height: 23px;
+                    line-height: 23px;
+                }
+                span:first-child {
+                    text-transform: uppercase;
+                }
+                span:last-child {
+                    text-transform: capitalize;
+                }
+            }
+            div.img-container {
+                width: 30%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            
+        }
+
+    }
+    
+    .buy {
+        width: 400px;
+        height: 450px;
+        background-color: #191919;
+        margin-top: 50px;
+        padding: 50px 20px;
+        position: relative;
+
+        .price {
+            color: $header-main-color;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            color: $header-secondary-color;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            border: none;
+            background-color: #28ACFF;
+            width: 140px;
+            height: 30px;
+            color: $header-main-color;
+            text-transform: uppercase;
+        }
+
+        img.warranty {
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            width: 90px;
+        }
+    }
+}
+
+main .jumbo-painter .bottom-section-container {
+    .nav-container {
+        background-color: #E6E6E6;
+        .middle-nav {
+            width: 800px;
+            margin: 0 auto;
+            height: 70px;
+            background-color: #E6E6E6;
+            ul {
+                @include ul-no-style;
+                outline: 1px dotted lightblue;
+                justify-content: center;
+                li {
+                    height: 70px;
+                    font-size: 16px;
+                    line-height: 70px;
+                    padding: 0 25px;
+                }
+            }
+        }
+    }
+}
+
+// _/main jumbo.painter
