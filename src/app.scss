@@ -1,0 +1,97 @@
+// ?? come chiamo la cartella in cui metto i file con le variabili?
+// ?? per essere visti come file scss gli import devono essere in una cartella seguita da sass
+
+/* IMPORTS */
+@import "fonts";
+
+/* MIXINS AND VARIABLES */
+@mixin ul-no-style {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+$header-secondary-color: #C4C4C4;
+$header-main-color: white;
+
+/* COMMONS & UTILITIES */
+html {
+    @include font-arial;
+}
+
+* {box-sizing: border-box; margin: 0; padding: 0;}
+
+a {
+    text-decoration: none;
+}
+
+/* STYLE */
+.header-container {
+    background-color: #000;
+}
+
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+    background-color: #000;
+}
+
+// _header-top-nav
+header nav.top {
+    height: 30%;
+    
+    ul {
+        @include ul-no-style;
+        justify-content: flex-end;
+
+        li {
+            padding-right: 25px;
+
+            i {
+                color: #019CFF;
+                padding-right: 10px;
+            }
+
+            a {
+                color: $header-secondary-color;
+            }
+        }
+    }
+}
+// _/header nav.top
+
+// _header nav.bottom
+header nav.bottom {
+     height: 70%;
+     display: flex;
+     align-items: stretch;
+
+    .logo-container {
+        width: 10%;
+        display: flex;
+        align-items: center;         
+        justify-content: center;
+        img {
+            width: 100px;
+            padding-bottom: 10px;
+        }
+    }
+    
+    ul {
+        width: 80%;
+        @include ul-no-style; 
+        justify-content: space-around;
+        li {
+            color: $header-main-color;
+            a {
+                color: $header-main-color;
+            }
+            i {
+                color: $header-secondary-color;
+            }
+        }
+    }
+}
+// _/header nav.bottom

@@ -1,1 +1,93 @@
+/* IMPORTS */
+/* MIXINS AND VARIABLES */
+/* COMMONS & UTILITIES */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* STYLE */
+.header-container {
+  background-color: #000;
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+  background-color: #000;
+}
+
+header nav.top {
+  height: 30%;
+}
+
+header nav.top ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+header nav.top ul li {
+  padding-right: 25px;
+}
+
+header nav.top ul li i {
+  color: #019CFF;
+  padding-right: 10px;
+}
+
+header nav.top ul li a {
+  color: #C4C4C4;
+}
+
+header nav.bottom {
+  height: 70%;
+  display: flex;
+  align-items: stretch;
+}
+
+header nav.bottom .logo-container {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav.bottom .logo-container img {
+  width: 100px;
+  padding-bottom: 10px;
+}
+
+header nav.bottom ul {
+  width: 80%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+}
+
+header nav.bottom ul li {
+  color: white;
+}
+
+header nav.bottom ul li a {
+  color: white;
+}
+
+header nav.bottom ul li i {
+  color: #C4C4C4;
+}
 
