@@ -12,8 +12,9 @@
     height: 100%;
 }
 
-$header-secondary-color: #C4C4C4;
-$header-main-color: white;
+$text-secondary-color: #C4C4C4;
+$text-main-color: white;
+$breakpoint: 992px;
 
 /* COMMONS & UTILITIES */
 html {
@@ -36,6 +37,25 @@ header {
     margin: 0 auto;
     height: 100px;
     background-color: #000;
+
+    @media screen and (max-width: $breakpoint) {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .menu {
+        display: none;
+        @media screen and (max-width: $breakpoint) {
+            display: block;
+            color: $header-maitextr;
+            position: absolute;
+            left: 15px;
+            font-size: 24px;
+        }
+    }
 }
 
 // _header-top-nav
@@ -55,9 +75,13 @@ header nav.top {
             }
 
             a {
-                color: $header-secondary-color;
+                color: $text-secondary-color;
             }
         }
+    }
+
+    @media screen and (max-width: $breakpoint) {
+        display: none;
     }
 }
 // _/header nav.top
@@ -73,9 +97,15 @@ header nav.bottom {
         display: flex;
         align-items: center;         
         justify-content: center;
+        @media screen and (max-width: $breakpoint) {
+            width: 80px;
+        }
         img {
             width: 100px;
             padding-bottom: 10px;
+            @media screen and (max-width: $breakpoint) {
+                padding: 0;
+            }
         }
     }
     
@@ -84,15 +114,19 @@ header nav.bottom {
         @include ul-no-style; 
         justify-content: space-around;
         li {
-            color: $header-main-color;
+            color: $header-maitextr;
             a {
-                color: $header-main-color;
+                color: $header-maitextr;
             }
             i {
-                color: $header-secondary-color;
+                color: $text-secondary-color;
             }
         }
+        @media screen and (max-width: $breakpoint) {
+            display: none;
+        }
     }
+
 }
 // _/header nav.bottom
 
@@ -100,7 +134,7 @@ header nav.bottom {
 main .section-container {
     background-image: url("../img/hero-pe-8.jpg");
     background-size: cover;
-    background-position: 55% 10%;
+    background-position: 50% 10%;
 
 }
 
@@ -136,7 +170,7 @@ main .jumbo-painter .top-section-container {
                 list-style: none;
                 padding: 5px 0;
                 i {
-                    color: $header-secondary-color;
+                    color: $text-secondary-color;
                 }
             }
         }
@@ -184,13 +218,13 @@ main .jumbo-painter .top-section-container {
         position: relative;
 
         .price {
-            color: $header-main-color;
+            color: $header-maitextr;
             font-size: 32px;
             margin-bottom: 10px;
         }
 
         .description {
-            color: $header-secondary-color;
+            color: $text-secondary-color;
             text-transform: uppercase;
             font-size: 14px;
             margin-bottom: 30px;
@@ -201,7 +235,7 @@ main .jumbo-painter .top-section-container {
             background-color: #28ACFF;
             width: 140px;
             height: 30px;
-            color: $header-main-color;
+            color: $header-maitextr;
             text-transform: uppercase;
         }
 

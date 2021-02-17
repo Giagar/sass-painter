@@ -27,6 +27,30 @@ header {
   background-color: #000;
 }
 
+@media screen and (max-width: 992px) {
+  header {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+}
+
+header .menu {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  header .menu {
+    display: block;
+    color: white;
+    position: absolute;
+    left: 15px;
+    font-size: 24px;
+  }
+}
+
 header nav.top {
   height: 30%;
 }
@@ -52,6 +76,12 @@ header nav.top ul li a {
   color: #C4C4C4;
 }
 
+@media screen and (max-width: 992px) {
+  header nav.top {
+    display: none;
+  }
+}
+
 header nav.bottom {
   height: 70%;
   display: flex;
@@ -65,9 +95,21 @@ header nav.bottom .logo-container {
   justify-content: center;
 }
 
+@media screen and (max-width: 992px) {
+  header nav.bottom .logo-container {
+    width: 80px;
+  }
+}
+
 header nav.bottom .logo-container img {
   width: 100px;
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  header nav.bottom .logo-container img {
+    padding: 0;
+  }
 }
 
 header nav.bottom ul {
@@ -91,10 +133,16 @@ header nav.bottom ul li i {
   color: #C4C4C4;
 }
 
+@media screen and (max-width: 992px) {
+  header nav.bottom ul {
+    display: none;
+  }
+}
+
 main .section-container {
   background-image: url(/images/hero-pe-8.jpg?8b29a957bc4c220aea5804fdfdd1c467);
   background-size: cover;
-  background-position: 55% 10%;
+  background-position: 50% 10%;
 }
 
 main .jumbo-painter .top-section-container {
