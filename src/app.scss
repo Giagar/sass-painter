@@ -50,7 +50,7 @@ header {
         display: none;
         @media screen and (max-width: $breakpoint) {
             display: block;
-            color: $header-maitextr;
+            color: $text-main-color;
             position: absolute;
             left: 15px;
             font-size: 24px;
@@ -114,9 +114,9 @@ header nav.bottom {
         @include ul-no-style; 
         justify-content: space-around;
         li {
-            color: $header-maitextr;
+            color: $text-main-color;
             a {
-                color: $header-maitextr;
+                color: $text-main-color;
             }
             i {
                 color: $text-secondary-color;
@@ -218,7 +218,7 @@ main .jumbo-painter .top-section-container {
         position: relative;
 
         .price {
-            color: $header-maitextr;
+            color: $text-main-color;
             font-size: 32px;
             margin-bottom: 10px;
         }
@@ -235,7 +235,7 @@ main .jumbo-painter .top-section-container {
             background-color: #28ACFF;
             width: 140px;
             height: 30px;
-            color: $header-maitextr;
+            color: $text-main-color;
             text-transform: uppercase;
         }
 
